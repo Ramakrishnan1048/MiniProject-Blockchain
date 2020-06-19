@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+	<center>
+		<h3>LIVE FEED</h3>
+		<video autoplay loop>
+			<source src="{{ url_for('static', filename='feed.mp4') }}" type="video/mp4">
+			Browser doesn't support this feed
+		</video>
+	</center>
+
+	<div id="buttons">
+		<a href="/" class="btn blue" style="margin-left:30px">HOME</a>
+	</div>
+{% endblock content %}

@@ -1,0 +1,14 @@
+{
+  "name": "final",
+  "version": "1.0.0",
+  "description": "final_v1",
+  "main": "final.py",
+  "scripts": {
+    "test": "python final.py"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "web3": "^1.2.9"
+  }
+}

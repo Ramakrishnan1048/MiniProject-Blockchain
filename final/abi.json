@@ -1,0 +1,1 @@
+[{"constant":true,"inputs":[{"name":"blockId","type":"uint256"}],"name":"getData","outputs":[{"name":"","type":"bytes32"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"num","type":"uint256"},{"name":"data","type":"bytes32"}],"name":"addData","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"}]

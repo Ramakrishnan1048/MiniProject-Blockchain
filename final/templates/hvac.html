@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+	<table>
+		<tr>
+			<h2><th style="border: 1px solid #dddddd;text-align: center;padding: 8px;">TEMPERATURE(*C)</th></h2>
+			<h2><th style="border: 1px solid #dddddd;text-align: center;padding: 8px;">HUMIDITY(%)</th></h2>
+		</tr>
+		{% for line in contents %}
+		<tr>
+			<td><h3>{{line.split(',')[0]}}</h3></td>
+			<td><h3>{{line.split(',')[1]}}</h3></td>
+		</tr>
+		{% endfor %}
+	</table>
+
+	<div id="buttons">
+		<a href="/" class="btn blue" style="margin-left:30px">HOME</a>
+	</div>
+{% endblock content %}

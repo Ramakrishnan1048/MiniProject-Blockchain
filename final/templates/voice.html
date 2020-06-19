@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+	<h1>PREVIOUS COMMANDS</h1>
+	
+	{% for line in contents1 %}
+		<center><h3>{{line}}</h3></center>
+	{% endfor %}
+
+	<div id="buttons">
+		<a href="/" class="btn blue" style="margin-left:30px">HOME</a>
+	</div>
+{% endblock content %}

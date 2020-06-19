@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	{% if title %}
+	<title>{{title}}</title>
+	{% else %}
+	<title>Home page</title>
+	{% endif %}
+	<style type="text/css">
+		html,body{
+			height: 100%;
+			overflow: hidden;
+		}
+	</style>
+</head>
+<body>
+
+	
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="/">IOT BLOCKCHAIN</a>
+			</div>
+		</div>
+	</nav>
+	
+	
+	<div style="overflow: hidden;" class="hero-image">
+		{% block content %}  
+		{% endblock content %}
+	</div>
+	
+
+</body>
+</html>
